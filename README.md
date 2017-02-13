@@ -99,8 +99,9 @@ All organoids have been homogeneously labeled with a fluorescent dye, which we w
 - Discard objects touching the border of the image. One cannot measure the area of an organoid unless it is fully visible.
 - Use the **Global > Otsu > Two classes** threshold strategy. 
 - Use a **threshold correction factor** of **2.0**. This increases the minimun intensity required for a pixel to be considered part of an object.
+- Set **Method to distinguish clumped objects: Intensity**. 
 - Further, set **Method to draw dividing lines between clumped objects: Shape**. 
-- Select a ** size of smoothing filter for declumping** of **100**
+- Select a **size of smoothing filter for declumping** of **100**
 - Select **Retain outlines of the identified objects**. Name the outlines **outlines_organoids**. We will use these outlines at the end of the pipeline to keep a description of the analysis. 
 - Finally, in **Fill holes in identified objects** select **Never**. This will improve the segmentation of organoids which are curved of close to one another.
 - Now, look at the result clicking **[Step]** again.
